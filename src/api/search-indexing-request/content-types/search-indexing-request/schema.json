@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "search_indexing_requests",
+  "info": {
+    "singularName": "search-indexing-request",
+    "pluralName": "search-indexing-requests",
+    "displayName": "search-indexing-request"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "item_id": {
+      "type": "integer"
+    },
+    "collection_name": {
+      "type": "string"
+    },
+    "indexing_status": {
+      "type": "enumeration",
+      "enum": [
+        "To be done",
+        "Done"
+      ]
+    },
+    "indexing_request_type": {
+      "type": "enumeration",
+      "enum": [
+        "Add to index",
+        "Delete from index"
+      ]
+    },
+    "full_site_indexing": {
+      "type": "boolean"
+    }
+  }
+}
