@@ -66,6 +66,7 @@ async function searchData(searchTerm){
   {
     const result= await client.search({
       index: process.env.ELASTIC_INDEX_NAME,
+      size: 100,
       query: {
         bool : {
           "should" : [
